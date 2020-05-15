@@ -1,13 +1,14 @@
 SPK_NAME = deluge
-SPK_VERS = 1.3.15
-SPK_REV = 9
+SPK_VERS = 2.0.3
+SPK_REV = 10
 SPK_ICON = src/deluge.png
 BETA = 1
 
-BUILD_DEPENDS = cross/python cross/setuptools cross/pip cross/wheel
+BUILD_DEPENDS = cross/python3 cross/setuptools cross/pip cross/wheel
 DEPENDS  = cross/libtorrent cross/$(SPK_NAME)
-WHEELS = characteristic chardet pyasn1-modules pyxdg Mako service-identity
-SPK_DEPENDS = "python>=2.7.6-8"
+PIP = pip3
+WHEELS = src/requirements.txt
+SPK_DEPENDS = "python3>=3.5.6-8"
 
 REQUIRED_DSM = 5.0
 

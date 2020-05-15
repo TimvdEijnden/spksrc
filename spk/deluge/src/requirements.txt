@@ -1,0 +1,10 @@
+twisted[tls]>=17.1
+rencode
+pyopenssl
+pyxdg
+pillow
+mako
+chardet
+six
+setproctitle
+zope.interface>=4.4.2
